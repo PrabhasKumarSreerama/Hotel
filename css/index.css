@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.navbar nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 5rem;
+    background: url(https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: #888;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.hero p {
+    font-size: 2.5rem;
+    border: 0.3rem solid #000;
+    margin-top: 0.6rem;
+    color: #9f95e6;
+    background-color: #000;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+}
+
+.about, .heading-destination, .offers-heading, .heading-gallery {
+    border-bottom-color: rgb(15, 183, 15);
+    border-bottom-style: dashed;
+    border-bottom-width: 0.1rem;
+    white-space: nowrap;
+    text-align: center;
+    width: auto;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-section {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.about-section p {
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+}
+
+.about-section img {
+    height: 20rem;
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.destination-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #da8148;
+    padding: 2rem;
+    border: 0.3rem solid black;
+    border-radius: 0.5rem;
+    width: 25rem;
+    align-items: center;
+    transition: transform 0.3s;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.destination-card:hover,
+.destination-card1:hover {
+    transform: scale(1.05);
+}
+
+.destination-card img,
+.destination-card1 img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+}
+
+.destination-card1 {
+    display: flex;
+    flex-direction: row;
+    background-color: #a7e50c;
+    padding: 2rem;
+    border: 0.3rem solid black;
+    border-radius: 0.5rem;
+    width: 25rem;
+    align-items: center;
+    transition: transform 0.3s;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.description {
+    flex-grow: 1;
+}
+
+.offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1.5rem;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #9f95e6;
+    padding: 1.5rem;
+    color: #000000a1;
+    border: 0.3rem solid #e06bb7b2;
+    border-radius: 1.5rem;
+    width: 23rem;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-transform: capitalize;
+    transition: transform 0.2s;
+}
+
+.offer-card:hover {
+    transform: scale(1.2);
+    color: #000;
+    border-color: #ee05c0;
+}
+
+.offer-book-button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: rgb(91, 229, 183);
+    border: none;
+}
+
+.offer-book-button:hover {
+    background-color: rgb(237, 34, 34);
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gallery img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: transform 0.3s;
+    border: 0.3rem solid burlywood;
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
